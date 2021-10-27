@@ -1,18 +1,20 @@
-* {
+body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
     text-align: center;
+    box-sizing: border-box;
+    opacity: 0.9;
 }
 
 header {
     border-bottom: 1px solid seashell;
     position: fixed;
-    opacity: 0.4;
     display: flex;
     width: 100%;
     justify-content: space-around;
+    background-color:black;
 }
 
 li {
@@ -25,17 +27,29 @@ li {
     height: 50px;
 }
 
-.mission h2, .mission h4 {
-    position: absolute;
+#mission {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
 }
-    
+
+.mission-text {
+    position: absolute;
+    background-color: black;
+    width: 1200px;
+    align-items: center;
+}
 
 .mission-background-image {
-    position: relative;
-    background-size: 700px;
+    background-image: 700px;
     margin-top: 80px;
 }
-
 .first-tea img, .second-tea img, .third-tea img, .fourth-tea img, .fifth-tea img {
     height: 200px;
     width: 300px;
