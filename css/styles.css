@@ -1,1 +1,43 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+}
 
+header {
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    opacity: 0.4;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    display: inline-flex;
+    align-content: flex-end;
+}
+
+.logo {
+    margin-top: 10px;
+    height: 50px;
+}
+
+.mission h2, .mission h4 {
+    position: absolute;
+}
+    
+
+.mission-background-image {
+    position: relative;
+    background-size: 700px;
+    margin-top: 80px;
+}
+
+.first-tea img, .second-tea img, .third-tea img, .fourth-tea img, .fifth-tea img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
