@@ -1,57 +1,53 @@
-body {
+* {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
     text-align: center;
-    box-sizing: border-box;
     opacity: 0.9;
 }
 
-header {
-    border-bottom: 1px solid seashell;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    background-color:black;
+body {
+    margin: 0;
 }
 
-li {
-    display: inline-flex;
-    align-content: flex-end;
+header {
+    display: flex;
+    height: 69px;
+    position: fixed;
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+}
+
+nav {
+    float: right;
+    text-decoration: underline;
 }
 
 .logo {
-    margin-top: 10px;
+    text-align: left;
+    padding-left: 10px;
     height: 50px;
 }
 
-#mission {
+#mission-section {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/img-mission-background.webp);
+    height: 700px;
+    width: 1200px;
+}
+
+.mission-statement {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-   
-}
-
-.mission-text {
-    position: absolute;
+    height: 100px;
     background-color: black;
-    width: 1200px;
-    align-items: center;
+    height: auto;
 }
 
-.mission-background-image {
-    background-image: 700px;
-    margin-top: 80px;
-}
-.first-tea img, .second-tea img, .third-tea img, .fourth-tea img, .fifth-tea img {
-    height: 200px;
-    width: 300px;
-    padding: 10px;
-}
