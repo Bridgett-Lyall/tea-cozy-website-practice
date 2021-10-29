@@ -5,10 +5,29 @@
     background-color: black;
     text-align: center;
     opacity: 0.9;
+    margin: 0;
 }
 
-body {
-    margin: 0;
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+h5 {
+    font-size: .75em;
+}
+
+main {
+    padding-top: 70px;
 }
 
 header {
@@ -17,37 +36,155 @@ header {
     position: fixed;
     border-bottom: 1px solid seashell;
     width: 100%;
-    z-index: 10;
+    z-index: 20;
     align-items: center;
 }
 
 nav {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    flex: 4;
     text-decoration: underline;
+    padding-right: 10px;
+}
+
+a {
+    margin-left: 25px;
+    margin-right: 5px;
 }
 
 .logo {
+    flex: 1;
     text-align: left;
+    padding-top: 10px;
+}
+
+.logo img {
+    padding-bottom: 3px;
     padding-left: 10px;
     height: 50px;
 }
 
-#mission-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url(../images/img-mission-background.webp);
-    height: 700px;
+.background-image {
     width: 1200px;
+    height: 700px;
 }
 
+#mission-section {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+
 .mission-statement {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+
+
+#tea-of-the-month-section {
+    padding-top: 70px;
+    margin-bottom: 55px;
+}
+
+.tea-of-the-month-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.tea-of-the-month-images img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.image-container figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.berry-blitz-tea {
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+.bedford-bizarre-tea {
+    margin-left: 25px;
+}
+
+.seasonal-donuts {
+    margin-right: 0px;
+    margin-left: 25px;
+}
+
+.myrtle-ave-tea {
+    margin-right: 25px;
+}
+
+.spiced-rum-tea {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#locations-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    background-color: black;
-    height: auto;
+    background-image: url("../images/img-locations-background.webp");
+    margin: 0 auto;
+    height: 600px;
+    width: 1200px;
 }
 
+.locations-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 15px;
+}
+
+
+.downtown h3 {
+    margin-bottom: 10px;
+}
+
+.location-header {
+    background-color: transparent;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.east-bayside {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.contact {
+    height: 200px;
+    font-style: normal;
+    margin-top: 60px;
+}
+
+.email {
+    padding-top: 8px;
+}
+
+.copyright {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 0;
+}
